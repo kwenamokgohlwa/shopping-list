@@ -4,7 +4,7 @@
   "description": "node shopping list",
   "main": "server.js",
   "scripts": {
-    "test": ""
+    "start": "node src/server.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/kwenamokgohlwa/shopping-list/issues"
   },
-  "homepage": "https://github.com/kwenamokgohlwa/shopping-list#readme"
+  "homepage": "https://github.com/kwenamokgohlwa/shopping-list#readme",
+  "dependencies": {
+    "express": "^4.16.2"
+  }
 }
