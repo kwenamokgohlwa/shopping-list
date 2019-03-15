@@ -39,10 +39,19 @@ module.exports = {
           if(err){
             res.redirect(500, "static/index")
           } else {
-            res.redirect(303, "/")
+            res.redirect(303, "/");
           }
         });
       },
 
+      update(req, res, next){
+             staticQueries.updateTopic(req.params.id, req.body, (err, item) => {
+               if(err || item == null){
+                 res.redirect(404, "static/index");
+               } else {
+                res.redirect(303, "/");
+               }
+             });
+           }
 
   }

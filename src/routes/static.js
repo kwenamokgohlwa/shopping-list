@@ -9,4 +9,6 @@ router.post("/", staticController.create);
 
 router.post("/:id/destroy", staticController.destroy);
 
+router.post("/:id/update", staticController.update);
+
 module.exports = router;

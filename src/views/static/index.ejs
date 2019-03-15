@@ -54,14 +54,21 @@
                   <tr>
                     <td><%= position %></td>
                     <td><%= item.name %></td>
-                    <td contenteditable='true'><%= item.quantity %></td>
-                    <td class="text-right"><button class="btn btn-sm btn-info">Save</button>
+                    <td contenteditable='true'>
+                      <form style="display:initial" action="/<%= item.id %>/update" method="post">
+                        <input type="text" class="form-control" name="quantity" placeholder="<%= item.quantity %>">
+                        <button class="btn btn-sm btn-info" type="submit">
+                          Save
+                        </button>
+                      </form>
+                    </td>
                     <td class="text-right">
                       <form style="display:initial" action="/<%= item.id %>/destroy" method="post">
                         <button class="btn btn-sm btn-danger">
                           Delete
                         </button>
                       </form>
+                    </td>
                   </tr>
                   <% position += 1; %>
                 <% }) %>
