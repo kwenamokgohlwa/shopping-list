@@ -1,0 +1,19 @@
+{
+  "name": "shopping-list",
+  "version": "1.0.0",
+  "description": "node shopping list",
+  "main": "server.js",
+  "scripts": {
+    "test": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kwenamokgohlwa/shopping-list.git"
+  },
+  "author": "Kwena Mokgohlwa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kwenamokgohlwa/shopping-list/issues"
+  },
+  "homepage": "https://github.com/kwenamokgohlwa/shopping-list#readme"
+}
