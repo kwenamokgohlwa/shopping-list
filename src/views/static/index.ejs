@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<!-- #1 -->
+    <title><%= title %></title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+
+<!-- #2 -->
+    <link rel="stylesheet" href="/css/application.css">
+  </head>
+  <body>
+
+      <!-- Navigation -->
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+          <a class="navbar-brand" href="#">Croc Shopping List</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Home
+                  <span class="sr-only">(current)</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Page Content -->
+      <main class="container">
+
+        <div class="d-flex flex-row justify-content-center mt-3 mb-2">
+            <div class="col-md-8">
+            <h1 class="text-center">Croc Shopping List</h1>
+            <table class="table table-striped">
+                <thead>
+                <th width="10%">Position</th>
+                <th width="60%">Item</th>
+                <th width="10%">Quantity</th>
+                <th class="text-right" width="10%"></th>
+                <th class="text-right" width="10%"></th>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Bread</td>
+                    <td contenteditable='true'>2</td>
+                    <td class="text-right"><button class="btn btn-sm btn-info">Save</button>
+                    <td class="text-right"><button class="btn btn-sm btn-danger">Delete</button>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Butter</td>
+                    <td contenteditable='true'>5</td>
+                    <td class="text-right"><button class="btn btn-sm btn-info">Save</button>
+                    <td class="text-right"><button class="btn btn-sm btn-danger">Delete</button>
+                </tr>
+                </tbody>
+            </table>
+            
+            <div class="input-group mb-3">
+                <input type="text" class="form-control">
+                <div class="input-group-append">
+                <button class="btn btn-primary" type="button">Add new item</button>
+                </div>
+            </div>
+
+            </div>
+        </div>
+
+      </main>
+      <!-- /.container -->
+
+      <script
+        src="http://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous">
+      </script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    </body>
+</html>
