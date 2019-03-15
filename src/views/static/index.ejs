@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 <!-- #1 -->
-    <title><%= title %></title>
+    <title>Croc Shopping List</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
 
 <!-- #2 -->
@@ -47,20 +47,20 @@
                 <th class="text-right" width="10%"></th>
                 </thead>
                 <tbody>
-                <tr>
-                    <td>1</td>
-                    <td>Bread</td>
-                    <td contenteditable='true'>2</td>
+                
+                <% var position = 1; %>
+
+                <% items.forEach((item) => { %>
+                  <tr>
+                    <td><%= position %></td>
+                    <td><%= item.name %></td>
+                    <td contenteditable='true'><%= item.quantity %></td>
                     <td class="text-right"><button class="btn btn-sm btn-info">Save</button>
                     <td class="text-right"><button class="btn btn-sm btn-danger">Delete</button>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td>Butter</td>
-                    <td contenteditable='true'>5</td>
-                    <td class="text-right"><button class="btn btn-sm btn-info">Save</button>
-                    <td class="text-right"><button class="btn btn-sm btn-danger">Delete</button>
-                </tr>
+                  </tr>
+                  <% position += 1; %>
+                <% }) %>
+
                 </tbody>
             </table>
             
