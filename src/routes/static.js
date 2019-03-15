@@ -7,4 +7,6 @@ router.get("/", staticController.index)
 
 router.post("/", staticController.create);
 
+router.post("/:id/destroy", staticController.destroy);
+
 module.exports = router;

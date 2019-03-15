@@ -32,5 +32,17 @@ module.exports = {
               })
           }
         });
-      }
+      },
+
+      destroy(req, res, next){
+        staticQueries.deleteItem(req.params.id, (err, item) => {
+          if(err){
+            res.redirect(500, "static/index")
+          } else {
+            res.redirect(303, "/")
+          }
+        });
+      },
+
+
   }
